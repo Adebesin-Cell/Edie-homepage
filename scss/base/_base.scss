@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: inherit;
+}
+
+@include root;
+
+html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.6rem;
+
+     
+}
+
+::selection {
+      background-color: #4F4F4F;
+      color: #fff;
+}

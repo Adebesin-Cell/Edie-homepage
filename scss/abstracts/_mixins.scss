@@ -1,0 +1,23 @@
+@mixin root {
+      :root {
+            // GRAY color
+            --gray-1:#333333;
+            --gray-2: #4f4f4f;
+            --gray-3: #828282;
+            --gray-5: #E0E0E0;
+            --gray-4: #BDBDBD;
+            --gray-6: #f2f2f2;
+
+            // primary color
+
+            --blue: #2D9CDB;
+
+            --white: #FFFFFF;
+            --green: #27Ae60;
+            --red: #EB5757;
+
+
+            --bg-footer: #100E1D;
+
+      }
+}

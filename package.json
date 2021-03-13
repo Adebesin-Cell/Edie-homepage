@@ -1,0 +1,25 @@
+{
+  "name": "edie-homepage",
+  "version": "1.0.0",
+  "description": "This is a homepage for Edie company",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -w scss/main.scss css/main.css",
+    "server": "live-server",
+    "start": "npm-run-all --parallel watch server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adebesin-Cell/Edie-homepage.git"
+  },
+  "author": "Tolu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adebesin-Cell/Edie-homepage/issues"
+  },
+  "homepage": "https://github.com/Adebesin-Cell/Edie-homepage#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "yarn-run-all": "^3.1.1"
+  }
+}
