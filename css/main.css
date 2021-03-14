@@ -24,11 +24,186 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  overflow-x: hidden; }
 
 ::selection {
   background-color: #4F4F4F;
   color: #fff; }
+
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 7.2rem;
+  color: var(--gray-1); }
+
+.paragraph {
+  color: var(--gray-2);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem; }
+
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  color: var(--gray-1); }
+  .heading-secondary--sub {
+    line-height: 5.6rem;
+    width: 75%; }
+
+.u-ml-md {
+  margin-left: 27.7rem !important; }
+
+.u-mr-hg {
+  margin-right: 90.7rem !important; }
+
+.u-mt-xs {
+  margin-top: 4.2rem !important; }
+
+.u-mb-xs {
+  margin-bottom: 4.2rem !important; }
+
+.u-mb-hg {
+  margin-bottom: 40rem !important; }
+
+.cta-box {
+  width: 25.6rem;
+  height: 2.7rem; }
+  .cta-box--sm {
+    width: 17.2rem;
+    height: 2.1rem;
+    margin-bottom: .9rem; }
+
+.cta, .cta:link, .cta:visited {
+  display: inline-block;
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 500; }
+
+.cta--sm, .cta--sm:link, .cta--sm:visited {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--gray-3); }
+
+.button {
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--white);
+  display: block;
+  width: 9.2rem;
+  height: 4.9rem;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  background-color: var(--blue);
+  padding: 1rem 5rem;
+  padding-left: 3rem;
+  text-align: center;
+  border-radius: 12px; }
+
+.card {
+  padding: 4.6rem 3.4rem;
+  height: 42.2rem;
+  width: 34.1rem;
+  cursor: pointer;
+  border-radius: 24px;
+  transition: all .5s; }
+  .card:hover {
+    box-shadow: 0 1rem 3rem rgba(51, 51, 51, 0.1); }
+  .card:hover * .card__btn {
+    background-color: var(--blue);
+    color: var(--white); }
+  .card__icon {
+    width: 6.7rem;
+    height: 6.7rem;
+    padding: 2.05rem 1.95rem;
+    border-radius: 16px; }
+    .card__icon--green {
+      background-color: var(--green); }
+    .card__icon--blue {
+      background-color: var(--blue); }
+    .card__icon--red {
+      background-color: var(--red); }
+    .card__icon--white {
+      color: var(--white); }
+    .card__icon--size {
+      font-size: 3rem !important; }
+  .card__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .card__header {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    height: 3.6rem;
+    color: var(--gray-1);
+    margin-top: 3.5rem;
+    margin-bottom: 2.4rem; }
+  .card__paragraph {
+    color: var(--gray-2);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem; }
+  .card__btn, .card__btn:link, .card__btn:visited {
+    padding: 1.3rem .9rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: var(--gray-3);
+    display: inline-block;
+    text-decoration: none;
+    width: 11.6rem;
+    border-radius: 12px;
+    background-color: var(--gray-5);
+    text-align: center;
+    transition: all .5s ease; }
+
+.hero {
+  border-radius: 1.8rem;
+  overflow: hidden; }
+  .hero__image {
+    display: block;
+    width: 100%;
+    object-fit: cover; }
+
+.gallery__header {
+  width: 44.8rem; }
+
+.form {
+  width: 35rem;
+  height: 5.7rem; }
+  .form__label {
+    display: none; }
+  .form-group {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+  .form__input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: var(--gray-6);
+    font-family: inherit;
+    font-size: 1.8rem;
+    border-radius: 12px;
+    color: var(--gray-1);
+    padding: 1.5rem 2.1rem;
+    border: 1px solid var(--gray-6);
+    outline: none; }
+    .form__input:focus {
+      outline: none;
+      border: 1px solid var(--gray-6); }
+
+::-webkit-input-placeholder {
+  color: var(--gray-4); }
 
 .logo {
   font-size: 3.6rem;
@@ -41,12 +216,17 @@ body {
   padding-right: 5.6rem;
   padding-left: 5.2rem;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  height: 100%; }
 
 .container {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0 1.5rem;
   width: 100%; }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 114rem; } }
 
 .row {
   display: flex;
@@ -103,7 +283,8 @@ body {
 .logo-box {
   margin-top: 4.2rem;
   width: 7rem;
-  height: 5.3rem; }
+  height: 5.3rem;
+  cursor: pointer; }
 
 .header-navigation {
   list-style-type: none;
@@ -133,3 +314,24 @@ body {
 
 .modified--link-padding-left, .modified--link-padding-left:link, .modified--link-padding-left:visited {
   padding-left: 0rem; }
+
+.section-about {
+  margin-top: 10.4rem; }
+
+.text {
+  width: 54.3rem;
+  height: 14.4rem; }
+
+.main {
+  width: 36.6rem;
+  height: 14.1rem; }
+
+.section-works {
+  margin-top: 20rem; }
+
+.box {
+  width: 34.6rem;
+  height: 10.8rem; }
+
+.section-gallery {
+  margin-top: 19.4rem; }

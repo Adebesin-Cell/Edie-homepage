@@ -4,12 +4,18 @@
       padding-left: 5.2rem;
       margin-right: auto;
       margin-left: auto;
+      height: 100%;
 }
 
 .container {
-      margin: 0 auto;
+      margin-right: auto;
+      margin-left: auto;
       padding: 0 1.5rem;
       width: 100%;
+
+      @media only screen and (min-width:1200px) {
+            max-width: 114rem;
+      }
 }
 
 .row{

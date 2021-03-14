@@ -1,0 +1,100 @@
+.card {
+      padding: 4.6rem 3.4rem;
+
+      height: 42.2rem;
+      width: 34.1rem;
+      cursor: pointer;
+
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-around;
+
+      border-radius: 24px;
+      transition: all .5s ;
+
+      &:hover {
+            box-shadow: 0 1rem 3rem rgba(51, 51, 51, 0.1);
+      }
+
+      &:hover * &__btn {
+            background-color: var(--blue);
+            color: var(--white);
+      }
+
+
+      &__icon {
+
+            
+            width: 6.7rem;
+            height: 6.7rem;
+            padding: 2.05rem 1.95rem;
+            border-radius: 16px;
+
+            &--green {
+                  background-color: var(--green);
+            }
+            &--blue {
+                  background-color: var(--blue);
+            }
+            &--red {
+                  background-color: var(--red);
+            }
+
+            &--white {
+                  color: var(--white);
+            }
+
+            &--size {
+                  font-size: 3rem !important;
+            }
+
+      }
+
+      &__details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;      
+          
+
+      }
+
+      &__header {
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            height: 3.6rem;
+            color: var(--gray-1);
+
+            margin-top: 3.5rem;
+            margin-bottom: 2.4rem;
+      }
+
+      &__paragraph {
+            color: var(--gray-2);
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+
+            margin-bottom: 2.4rem;
+      }
+
+      &__btn{
+            &,
+            &:link,
+            &:visited {
+                  padding: 1.3rem .9rem;
+                  font-size: 1.6rem;
+                  line-height: 2.4rem;
+                  font-weight: 500;
+                  color: var(--gray-3);
+                  display: inline-block;
+                  text-decoration: none;
+                  width: 11.6rem;
+                  border-radius: 12px;
+
+                  background-color: var(--gray-5);
+                  text-align: center;
+                  transition: all .5s ease;
+            }
+
+      }
+}

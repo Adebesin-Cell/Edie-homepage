@@ -1,0 +1,62 @@
+.cta {
+
+      &-box {
+            width: 25.6rem;
+            height: 2.7rem;
+
+            &--sm {
+                  width: 17.2rem;
+                  height: 2.1rem;
+
+                  margin-bottom: .9rem;
+            }
+      }
+      &,
+      &:link,
+      &:visited {
+            display: inline-block;
+            color: var(--blue);
+            text-decoration: none;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            font-weight: $fw-medium;
+      }
+
+      &--sm {
+            &,
+            &:link,
+            &:visited{
+                  font-size: 1.4rem;
+                  font-weight: $fw-small;
+                  color: var(--gray-3);
+            }
+
+      }
+}
+
+.button-box {
+     
+}
+
+.button {
+      border: none;
+      outline: none;
+      font-size: inherit;
+      font-family: inherit;
+      color: var(--white);
+      display: block;
+      width: 9.2rem;
+      height: 4.9rem;
+
+      position: absolute;
+
+      top: 4px;
+      right: 4px;
+      bottom: 4px;
+      background-color: var(--blue);
+      padding: 1rem 5rem;
+      padding-left: 3rem;
+      text-align: center;
+      border-radius: 12px;
+
+}
