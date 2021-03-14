@@ -7,9 +7,9 @@
     "watch": "node-sass -w scss/main.scss css/main.css",
     "server": "live-server",
     "start": "npm-run-all --parallel watch server",
-    "compile": "node-sass scss/main.scss css/style.comp.css",
-    "concat": "concat -o css/style.concat.css css/material-icons.css css/style.comp.css",
-    "compress": "node-sass css/style.concat.css css/main.css --output-style compressed",
+    "compile": "node-sass scss/main.scss css/main.comp.css",
+    "concat": "concat -o css/main.concat.css assets/aos.css css/material-icons.css css/main.comp.css",
+    "compress": "node-sass css/main.concat.css css/main.css --output-style compressed",
     "build": "npm-run-all compile concat compress"
   },
   "repository": {
