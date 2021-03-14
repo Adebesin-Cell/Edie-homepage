@@ -1,6 +1,65 @@
 .gallery {
+      backface-visibility: hidden;
 
       &__header {
             width: 44.8rem;
+            backface-visibility: hidden;
+      }
+
+      &__box {
+            backface-visibility: hidden;
+
+
+            &--1 {
+                  margin-top: 18.8rem;
+            }
+            &--2 {
+                  
+            }
+            &--3 {
+                  margin-top: 10.6rem;
+            }
+            &--4 {
+                  margin-top: -2rem;
+            }
+            cursor: pointer;
+            transition: all .5s;
+
+            &:hover {
+                  transform: scaleX(1.03) scaleY(1.03);
+            }
+            
+      }
+
+      &__image-box {
+            backface-visibility: hidden;
+            width: 54.5rem;
+            height: 54.5rem;
+            border-radius: 12px;
+            overflow: hidden;
+
+            cursor: pointer;
+      }
+
+      &__image {
+            backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
+            display: block;
+
+      }
+
+      &__info {
+            margin-top: 2rem;
+            backface-visibility: hidden;
+      }
+
+      &__text {
+            font-size:1.4rem ;
+            font-weight: 300;
+            color: var(--gray-3);
+            line-height: 2.1rem;
+            backface-visibility: hidden;
       }
 }
+

@@ -34,9 +34,7 @@
       }
 }
 
-.button-box {
-     
-}
+
 
 .button {
       border: none;
@@ -59,4 +57,42 @@
       text-align: center;
       border-radius: 12px;
 
+      cursor: pointer;
+
+}
+
+.btn {
+      &,
+      &:link,
+      &:visited {
+            color: var(--blue);
+            text-decoration: none;
+      }
+
+      &--animate {
+            width: 11.3rem;
+            display: flex;
+            align-items: center;
+      }
+
+      span {
+            margin-left: 1rem;
+            width: 1.6rem;
+            height: .7rem;
+            align-self: center;
+            margin-top: -.6rem;
+            transition: all .5s;
+      }
+
+      .material-icons.icon__sm {
+            font-size: 1.4rem;
+      }
+
+      &:focus > span {
+           animation: move-left 1s infinite;
+      }
+
+      &:focus {
+            animation: pulsate 1s infinite;
+      }
 }

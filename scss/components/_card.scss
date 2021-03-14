@@ -4,6 +4,7 @@
       height: 42.2rem;
       width: 34.1rem;
       cursor: pointer;
+      backface-visibility: hidden;
 
       // display: flex;
       // flex-direction: column;
@@ -13,7 +14,9 @@
       transition: all .5s ;
 
       &:hover {
-            box-shadow: 0 1rem 3rem rgba(51, 51, 51, 0.1);
+            backface-visibility: hidden;
+            transform: scaleX(1.03) scaleY(1.05);
+            box-shadow: 0 1rem 3rem rgba(51, 51, 51, 0.2);
       }
 
       &:hover * &__btn {
@@ -29,6 +32,7 @@
             height: 6.7rem;
             padding: 2.05rem 1.95rem;
             border-radius: 16px;
+            backface-visibility: hidden;
 
             &--green {
                   background-color: var(--green);
@@ -53,7 +57,8 @@
       &__details {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;      
+            justify-content: space-around; 
+            backface-visibility: hidden;     
           
 
       }
@@ -67,6 +72,7 @@
 
             margin-top: 3.5rem;
             margin-bottom: 2.4rem;
+            backface-visibility: hidden;
       }
 
       &__paragraph {
@@ -75,6 +81,7 @@
             line-height: 2.4rem;
 
             margin-bottom: 2.4rem;
+            backface-visibility: hidden;
       }
 
       &__btn{
@@ -92,6 +99,7 @@
                   border-radius: 12px;
 
                   background-color: var(--gray-5);
+                  backface-visibility: hidden;
                   text-align: center;
                   transition: all .5s ease;
             }
