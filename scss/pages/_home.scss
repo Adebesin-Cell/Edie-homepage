@@ -41,5 +41,16 @@
       margin-top: 20.3rem;
 
       background-color: var(--bg-footer);
-      height: 40rem;
+      
+
+      &-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            // align-items: flex-end;
+
+      }
+
+
 }

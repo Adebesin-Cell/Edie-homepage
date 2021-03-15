@@ -63,4 +63,41 @@
       }
 }
 
-//  Use a utility classto remove padding
+
+.footer {
+
+      @mixin link {
+            font-size: 1.8rem;
+            line-height: 3.6rem;
+            font-weight: 400;
+            text-decoration: none;
+            color: var(--white);
+      }
+      
+
+      &__navigation {
+            list-style-type: none;
+            margin-bottom: 16.9rem;
+
+            &__link:not(:first-child), &__link:not(:last-child) {
+                  &,
+                  &:link,
+                  &:visited {
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+
+                        @include link;
+                  }
+            }
+
+            &__link:first-child, &__link:last-child {
+                  &,
+                  &:link,
+                  &:visited {
+                        @include link;
+
+                  }
+            }
+
+      }
+}
