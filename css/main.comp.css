@@ -74,12 +74,32 @@ body {
   .heading-secondary--sub {
     line-height: 5.6rem;
     width: 85%; }
+  .heading-secondary--team {
+    line-height: 5.4rem;
+    width: 80%;
+    margin-bottom: 1.4rem; }
+  .heading-secondary--review {
+    width: 75%;
+    line-height: 5.4rem; }
 
 .heading-tertiary {
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 3.6rem;
   color: var(--gray-1); }
+
+.heading-quart {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+  color: var(--red);
+  margin-bottom: .7rem; }
+
+.team__text {
+  color: var(--gray-2);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: 80%; }
 
 .u-ml-md {
   margin-left: 27.7rem !important; }
@@ -89,6 +109,9 @@ body {
 
 .u-mt-xs {
   margin-top: 4.2rem !important; }
+
+.u-mt-md {
+  margin-top: 4.6rem !important; }
 
 .u-mb-xs {
   margin-bottom: 4.2rem !important; }
@@ -237,11 +260,17 @@ body {
 
 .hero {
   border-radius: 1.8rem;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .5s ease; }
   .hero__image {
     display: block;
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    transition: all .5s ease; }
+    .hero__image:hover {
+      transform: scaleX(1.05) scaleY(1.03);
+      scale: 1.05; }
 
 .gallery {
   backface-visibility: hidden; }
@@ -315,6 +344,80 @@ body {
   color: var(--gray-1);
   width: 100%;
   height: 100%; }
+  .logo--white {
+    color: var(--white);
+    font-weight: normal; }
+
+.icon-box {
+  display: flex;
+  align-items: center; }
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer; }
+  .icon:not(:last-child) {
+    margin-right: 1.1rem; }
+
+.team__image-box {
+  overflow: hidden;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all .5s ease; }
+  .team__image-box--1 {
+    align-self: center; }
+
+.team__image-box:hover {
+  transform: scaleY(1.03) scaleX(1.05);
+  scale: 1.03; }
+
+.team__image {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .5s ease; }
+  .team__image--2 {
+    margin-bottom: 2.4rem;
+    width: 26rem;
+    height: 26rem;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    overflow: hidden; }
+
+.wrapper {
+  margin-left: 2.4rem; }
+
+.comment {
+  margin-top: 3.6rem; }
+  .comment__box {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-right: auto;
+    width: 13.5rem;
+    margin-right: 1rem; }
+  .comment__image-box {
+    display: flex; }
+  .comment__image {
+    display: block;
+    width: 100%;
+    overflow: hidden; }
+  .comment__details {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    justify-content: center; }
+  .comment__header {
+    margin-bottom: 1.2rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--gray-1); }
+  .comment__title {
+    color: var(--gray-3);
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 19.1rem; }
 
 .container-fluid {
   width: 100%;
@@ -390,6 +493,8 @@ body {
   width: 7rem;
   height: 5.3rem;
   cursor: pointer; }
+  .logo-box--mt {
+    margin-top: 0; }
 
 .header-navigation {
   list-style-type: none;
@@ -420,6 +525,24 @@ body {
 .modified--link-padding-left, .modified--link-padding-left:link, .modified--link-padding-left:visited {
   padding-left: 0rem; }
 
+.footer__navigation {
+  list-style-type: none;
+  margin-bottom: 16.9rem; }
+  .footer__navigation__link:not(:first-child), .footer__navigation__link:not(:first-child):link, .footer__navigation__link:not(:first-child):visited, .footer__navigation__link:not(:last-child), .footer__navigation__link:not(:last-child):link, .footer__navigation__link:not(:last-child):visited {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white); }
+  .footer__navigation__link:first-child, .footer__navigation__link:first-child:link, .footer__navigation__link:first-child:visited, .footer__navigation__link:last-child, .footer__navigation__link:last-child:link, .footer__navigation__link:last-child:visited {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white); }
+
 .section-about {
   margin-top: 10.4rem; }
 
@@ -443,3 +566,18 @@ body {
 
 .section-team {
   margin-top: 35.2rem; }
+
+.team__gallery {
+  margin-top: -11rem;
+  display: flex; }
+
+.section-review {
+  margin-top: 39rem; }
+
+.footer {
+  margin-top: 20.3rem;
+  background-color: var(--bg-footer); }
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: end; }
