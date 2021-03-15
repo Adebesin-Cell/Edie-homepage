@@ -1,11 +1,22 @@
 .hero {
       border-radius: 1.8rem;
       overflow: hidden;
+      cursor: pointer;
+      transition: all .5s ease;
+
+
+    
 
 
       &__image {
             display: block;
             width: 100%;
             object-fit: cover;
+            transition: all .5s ease;
+
+            &:hover {
+                  transform: scaleX(1.05) scaleY(1.03);
+                  scale: 1.05;
+            }
       }
 }
