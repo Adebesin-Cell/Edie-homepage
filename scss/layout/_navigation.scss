@@ -14,6 +14,11 @@
       margin-top: 5.1rem;
 
 
+      @include responsive (no-desktop) {
+            display: none;
+      }
+
+
       &__list {
            
             height: 100%;
@@ -46,6 +51,17 @@
       }
 }
 
+.navbar__toggle  {
+      display: none;
+
+      @include responsive (no-desktop ) {
+            display: block;
+
+            margin-top: 4.2rem;
+            cursor: pointer;
+      }
+}
+
 .modified--link-padding-right {
 
       &,
@@ -66,6 +82,10 @@
 
 .footer {
 
+      @include responsive (no-desktop) {
+            padding-bottom: 15rem;
+      }
+
       @mixin link {
             font-size: 1.8rem;
             line-height: 3.6rem;
@@ -78,6 +98,14 @@
       &__navigation {
             list-style-type: none;
             margin-bottom: 16.9rem;
+
+            @include responsive (no-desktop) {
+                  margin-bottom: 2rem;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+            }
 
             &__link:not(:first-child), &__link:not(:last-child) {
                   &,
@@ -100,4 +128,91 @@
             }
 
       }
+
+      .logo-box {
+            
+            @include responsive (no-desktop) {
+                  width: 100%;
+                  text-align: center;
+            }
+      }
+
+}
+
+.navbar {
+      opacity: 0;
+      visibility: hidden;
+      height: 100%;
+      position: fixed;
+      width: 0%;
+
+      background-color:var(--gray-3);
+
+      z-index: 99999;
+
+      transition: all .5s ease;
+
+
+
+      &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0rem 3rem;
+      }
+
+      &__nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+
+            margin-top: 5.6rem;
+
+           
+      }
+
+      &__item {
+            width: 50%;
+            display: inline-block;
+
+            margin: 0 auto;
+      }
+
+      &__link {
+            text-decoration: none;
+            padding: 1rem 3rem;
+            width: 100%;
+            display: inline-block;
+            color: var(--white);
+            font-size: 2.4rem;
+      }
+}
+
+.navbar__close {
+      align-self: center;
+
+      cursor: pointer;
+
+      margin-top: 5.6rem;
+
+      @media only screen and (max-width:350px) {
+            margin-top: 4.6rem;
+      }
+}
+
+.show {
+      opacity: 1;
+      visibility: visible;
+}
+
+.hide {
+      opacity: 0;
+      visibility: hidden;
+}
+
+.material-icons.white {
+      color: var(--white);
+      font-size: 3rem;
 }

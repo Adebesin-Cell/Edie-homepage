@@ -22,15 +22,27 @@
 
 .section-gallery {
       margin-top: 19.4rem;
+
+      @include responsive (no-desktop) {
+           margin-top: 14.2rem;
+      }
 }
 
 .section-team {
       margin-top: 35.2rem;
+
+      @include responsive (no-desktop) {
+            margin-top: 10rem;
+      }
 }
 
 .team__gallery {
       margin-top: -11rem;
       display: flex;
+
+      @include responsive (no-desktop) {
+            margin-top: 0rem;
+      }
 }
 
 .section-review {
@@ -51,6 +63,9 @@
             // align-items: flex-end;
 
       }
+
+      padding-left: 5.2rem;
+      padding-right: 5.2rem;
 
 
 }

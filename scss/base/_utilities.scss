@@ -1,5 +1,15 @@
 .u-ml-md {
       margin-left: 27.7rem !important;
+
+      @include responsive (small-desktop) {
+            margin-left: 10rem !important;
+      }
+      @include responsive (phone) {
+            margin-left: 2rem !important;
+      }
+      @media only screen and (max-width:400px) {
+            margin-left: 0 !important;
+      }
 }
 
 .u-mr-hg {
@@ -7,12 +17,20 @@
 }
 .u-mt-xs {
       margin-top: 4.2rem !important;
+      @media only screen and (max-width:400px) {
+            margin-top: 0 !important;
+      }
 }
 .u-mt-md {
       margin-top: 4.6rem !important;
+      
 }
 .u-mb-xs {
       margin-bottom: 4.2rem !important;
+
+      @media only screen and (max-width:400px) {
+            margin-bottom: 0 !important;
+      }
 }
 
 .u-mb-hg {
@@ -21,8 +39,33 @@
 
 .u-ml-shg {
       margin-left: 110rem !important;
+
+      @include responsive (tablet-landscape) {
+            margin-left: 90rem !important;
+      }
+      @include responsive (small-desktop) {
+            margin-left: 65rem !important;
+      }
+
+      @include responsive (no-desktop) {
+            margin-left: 6rem  !important;
+      }
 }
 
 .u-mt-n-sm {
       margin-top: -.5rem !important;
+      @include responsive (no-desktop) {
+            margin-top: 10rem !important;
+      }
+}
+
+.md-u-ml {
+      margin-left: 10rem !important;
+
+      @include responsive (phone) {
+            margin-left: 6rem !important;
+      }
+      @media only screen and (max-width:400px) {
+            margin-left: 0 !important;
+      }
 }

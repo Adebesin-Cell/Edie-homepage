@@ -5,6 +5,9 @@
       margin-right: auto;
       margin-left: auto;
       height: 100%;
+
+
+      overflow-x: hidden;
 }
 
 .container {
@@ -12,10 +15,22 @@
       margin-left: auto;
       padding: 0 1.5rem;
       width: 100%;
-
-      @media only screen and (min-width:1200px) {
-            max-width: 114rem;
+      @media only screen and (min-width: 36em) {
+            max-width: 54rem;
       }
+      @media only screen and (min-width: 48em) {
+            max-width: 72rem;
+      }
+      @media only screen and (min-width: 62em) {
+            max-width: 96rem;
+      }
+
+      @media only screen and (min-width:75em) {
+           max-width: 114rem;
+      }
+     
+     
+     
 }
 
 .row{
@@ -35,7 +50,6 @@
         }
 
         .col-1-of-1 {
-
             @media only screen and (min-width: 48em) {
                   flex:0 0 100%;
                   max-width: 100%;
@@ -72,28 +86,62 @@
         }
 
         .col-2-of-3 {
-              flex: 0 0 66.66667%;
-              max-width: 66.66667%;
+            @media only screen and (min-width: 48em) {
+                  flex: 0 0 66.66667%;
+                  max-width: 66.66667%;
+            }
+
+              
         }
 
         .col-3-of-4 {
-              flex: 0 0 75%;
-              max-width: 75%;
+            @media only screen and (min-width: 48em) {
+                  flex: 0 0 75%;
+                  max-width: 75%;
+            }
+   
         }
 
         .col-2-of-5 {
-              flex: 0 0 40%;
-              max-width: 40%;
+            @media only screen and (min-width: 48em) {
+                  flex: 0 0 40%;
+                  max-width: 40%;
+            }
+              
         }
 
         .col-3-of-5 {
-            flex: 0 0 60%;
-            max-width: 60%;
+            @media only screen and (min-width: 48em) {
+                  flex: 0 0 60%;
+                  max-width: 60%;
+            }
+            
         }
 
         .col-4-of-5 {
-              flex: 0 0 80%;
-              max-width: 80%;
+            @media only screen and (min-width: 48em) {
+                  flex: 0 0 80%;
+                  max-width: 80%;
+            }
+              
+        }
+
+        .sm-col-1-of-2 {
+              @media only screen and (max-width: 990px) {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+              }
+
+              @media only screen and (max-width:767px) {
+                    flex: 0 0 75%;
+                    max-width: 75%;
+                    margin-right: 0 !important;
+                    
+              }
+              @media only screen and (max-width:400px) {
+                 flex: 0 0 100%;
+                 max-width: 100%;
+            }
         }
       
 }

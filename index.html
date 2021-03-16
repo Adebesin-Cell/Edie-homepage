@@ -28,6 +28,42 @@
     <title>Devchallenges | Edie Homepage</title>
   </head>
   <body>
+
+    <div class="navbar" id="nav">
+      <div class="navbar__header">
+        <div class="logo-box" data-aos="fade-right">
+          <h1 class="logo logo--white">
+            Edie
+          </h1>
+        </div>
+
+        <div class="navbar__close" id="close">
+          <span class="material-icons white">
+            close
+          </span>
+        </div>
+      </div>
+      <ul class="navbar__nav">
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Services</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Our works</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Clients</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Contact</a>
+        </li>
+      </ul>
+      
+    </div>
+
+    <!-- close -->
     <!-- the content of the body starts with a wrapper -->
     <div class="container-fluid">
       <div class="row">
@@ -38,6 +74,11 @@
             <h1 class="logo">
               Edie
             </h1>
+          </div>
+          <div class="navbar__toggle" id="open">
+            <span class="material-icons">
+              menu
+            </span>
           </div>
           <!-- </logo box> -->
           <!-- <Navigation> -->
@@ -79,7 +120,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-1-of-3 u-ml-md u-mr-hg">
+          <div class="col-1-of-3 u-ml-md u-mr-hg sm-col-1-of-2">
             <div class="main"  data-aos="fade-right">
               <h1 class="heading-primary">
                 Story, emotion
@@ -89,7 +130,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-1-of-3  u-ml-md u-mr-hg">
+          <div class="col-1-of-3  u-ml-md u-mr-hg sm-col-1-of-2">
             <p class="paragraph u-mt-xs"  data-aos="fade-left">
               We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
             </p>
@@ -107,9 +148,9 @@
           </div>
       </section>
       <!-- section about ends -->
-      <section class="container section-works">
+      <section class="section-works">
         <div class="row">
-          <div class="col-1-of-3 u-mr-hg">
+          <div class="col-1-of-3 u-mr-hg sm-col-1-of-2 md-u-ml">
             <div class="box " data-aos="fade-right">
               <h2 class="heading-secondary">
                 We offer high demand services  
@@ -117,79 +158,71 @@
             </div>
           </div>
         </div>
-        <div class="row u-mt-xs">
-          <div class="col-1-of-1">
-            <div class="container">
-              <div class="row">
-                <div class="col-1-of-3">
-                  <div class="card">
-                    <div class="item--1" data-aos="fade-right">
-                      <div class="card__icon card__icon--blue">
-                        <span class="material-icons card__icon--size card__icon--white">
-                          create
-                        </span>
-                      </div>
-                      <div class="card__details">
-                        <h3 class="card__header">
-                          UI/UX Design
-                        </h3>
-                        <div class="card__paragraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
-                        </div>
-                        <a href="#" class="card__btn">Get started</a>
-                      </div>
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="item--1" data-aos="fade-right">
+                  <div class="card__icon card__icon--blue">
+                    <span class="material-icons card__icon--size card__icon--white">
+                      create
+                    </span>
+                  </div>
+                  <div class="card__details">
+                    <h3 class="card__header">
+                      UI/UX Design
+                    </h3>
+                    <div class="card__paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
                     </div>
+                    <a href="#" class="card__btn">Get started</a>
                   </div>
                 </div>
-                <div class="col-1-of-3">
-                  <div class="card">
-                    <div class="item--2" data-aos="fade-up">
-                      <div class="card__icon card__icon--green">
-                        <span class="material-icons card_icon--size card__icon--white">
-                          storage 
-                        </span>
-                      </div>
-                      <div class="card__details">
-                        <h3 class="card__header">
-                          Front End
-                        </h3>
-                        <div class="card__paragraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
-                        </div>
-  
-                        <a href="#" class="card__btn">Get started</a>
-                      </div>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="item--2" data-aos="fade-up">
+                  <div class="card__icon card__icon--green">
+                    <span class="material-icons card_icon--size card__icon--white">
+                      storage 
+                    </span>
+                  </div>
+                  <div class="card__details">
+                    <h3 class="card__header">
+                      Front End
+                    </h3>
+                    <div class="card__paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
                     </div>
+
+                    <a href="#" class="card__btn">Get started</a>
                   </div>
                 </div>
-                <div class="col-1-of-3">
-                  <div class="card">
-                    <div class="item--3" data-aos="fade-left">
-                      <div class="card__icon card__icon--red">
-                        <span class="material-icons card_icon--size card__icon--white">
-                          storage
-                        </span>
-                      </div>
-                      <div class="card__details">
-                        <h3 class="card__header">
-                          Back End
-                        </h3>
-                        <div class="card__paragraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
-                        </div>
-                        <a href="#" class="card__btn">Get started</a>
-                      </div>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="item--3" data-aos="fade-left">
+                  <div class="card__icon card__icon--red">
+                    <span class="material-icons card_icon--size card__icon--white">
+                      storage
+                    </span>
+                  </div>
+                  <div class="card__details">
+                    <h3 class="card__header">
+                      Back End
+                    </h3>
+                    <div class="card__paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
                     </div>
+                    <a href="#" class="card__btn">Get started</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
-      <section class="container section-gallery">
-        <div class="gallery">
-        </div>
+      <section class="section-gallery">
         <div class="row">
           <div class="col-1-of-3 u-mr-hg">
             <div class="gallery__header" data-aos="fade-down">
@@ -261,9 +294,9 @@
               </span>
             </a>
           </div>
-        </div>
+
       </section>
-      <section class="section-team container">
+      <section class="section-team">
         <div class="row">
           <div class="col-1-of-3">
             <div class="team"  data-aos="fade-right">
@@ -294,7 +327,7 @@
           </div>
         </div>
       </section>
-      <section class="section-review container">
+      <section class="section-review">
         <div class="row">
           <div class="col-1-of-1">
             <h2 class="heading-secondary heading-secondary--review"  data-aos="fade-right">
@@ -388,5 +421,7 @@
     <script>
       AOS.init();
     </script>
+
+    <script src="Js/App.js"></script>
   </body>
 </html>

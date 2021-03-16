@@ -2,6 +2,10 @@
       width:35rem;
       height: 5.7rem;
 
+      @include responsive (no-desktop ) {
+            width: 100%;
+      }
+
       &__label {
             display: none;
       }

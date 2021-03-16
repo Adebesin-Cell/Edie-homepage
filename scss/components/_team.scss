@@ -1,15 +1,37 @@
 .team {
 
+      /* @include responsive (small-desktop) {
+            padding: 1rem 4rem;
+      } */
+
+      @include responsive (no-desktop) {
+            margin-bottom: 3.6rem;
+      }
+
 
       &__image-box {
             overflow: hidden;
             border-radius: 24px;
             cursor: pointer;
             transition: all .5s ease;
+            width: 30rem;
+
+            @media only screen and (max-width:400px) {
+                  width: 20rem;
+            }
             
 
             &--1 {
                   align-self: center;
+                  width: 25rem;
+
+                  @include responsive (no-desktop) {
+                        width: 100%;
+                  }
+            }
+
+            &--2 {
+                  margin-top:3.6rem;
             }
 
 
@@ -43,4 +65,8 @@
 
 .wrapper {
       margin-left: 2.4rem;
+
+     /*  @include responsive (no-desktop) {
+            margin-top: 10.6rem;
+      } */
 }
