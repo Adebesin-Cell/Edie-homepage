@@ -8,6 +8,11 @@
 
 
       overflow-x: hidden;
+
+      @media only screen and (max-width: 767px) {
+            padding-right: 1rem;
+            padding-left: 1rem;
+      }
 }
 
 .container {
@@ -27,6 +32,13 @@
 
       @media only screen and (min-width:75em) {
            max-width: 114rem;
+      }
+
+      @media only screen and (max-width:767px) {
+            margin-right: 0;
+            margin-left: 0;
+
+            max-width: 100%;
       }
      
      
@@ -127,22 +139,52 @@
         }
 
         .sm-col-1-of-2 {
-              @media only screen and (max-width: 990px) {
+              @media only screen and (max-width: 61.875em) {
                     flex: 0 0 50%;
                     max-width: 50%;
               }
 
-              @media only screen and (max-width:767px) {
+              @media only screen and (max-width:47.9375em) {
                     flex: 0 0 75%;
                     max-width: 75%;
                     margin-right: 0 !important;
                     
               }
-              @media only screen and (max-width:400px) {
+              @media only screen and (max-width:25em) {
                  flex: 0 0 100%;
                  max-width: 100%;
             }
         }
+
+        .card-col {
+
+            @media only screen and (max-width:768px) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            @media only screen and (max-width:767px) {
+                  padding-left: 4.9rem;
+                  padding-right: 4.9rem;
+            }
+
+            @media only screen and (max-width:25em) {
+                  padding-right: 2.1rem;
+                  padding-left: 2.1rem;
+            }
+      }
+
+      .gallery__box {
+            @media only screen and (max-width:1440px) {
+                  padding-right: 2.2rem;
+                  padding-left: 2.2rem;
+            }
+
+            @media only screen and (max-width:768px) {
+                  padding-right: 2.6rem;
+                  padding-left: 2.2rem;
+            }
+      }
       
 }
 

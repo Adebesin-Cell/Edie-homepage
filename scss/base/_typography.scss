@@ -10,11 +10,17 @@
            width: 75%;
       }
 
-      @media only screen and (max-width:400px) {
+      @media only screen and (max-width:25em) {
             font-size: 3.4rem;
-            width: 60%;
+            width: 70%;
 
             line-height: 3.6rem;
+      }
+
+      @media only screen and (max-width: 20em) {
+            font-size: 2rem ;
+            width: 60%;
+
       }
 }
 
@@ -23,6 +29,12 @@
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 2.7rem;
+
+
+      @media only screen and (max-width: 767px) {
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+      }
 }
 
 .heading-secondary {
@@ -35,21 +47,39 @@
       &--sub {
             line-height: 5.6rem;
             width:85%;
+
+            @media only screen and (max-width: 767px) {
+                  width: 100%;
+            }
+
+
       }
 
       &--team {
             line-height: 5.4rem;
-            width: 80%;
+            width: 100%;
 
             margin-bottom: 1.4rem;
 
+            font-size: 4rem;
+
             @include responsive (tablet-landscape) {
+                  width: 100%;
+            }
+
+            @media only screen and (max-width:1024px) {
+                  font-size: 3rem;
+                  line-height: 3rem;
                   width: 100%;
             }
 
             @include responsive (small-desktop) {
                   font-size: 3.6rem;
                   line-height: 3rem;
+            }
+
+            @media only screen and (max-width:768px) {
+                  font-size: 2.6rem;
             }
 
             @include responsive (no-desktop) {
@@ -60,6 +90,12 @@
 
             @include responsive (phone) {
                   font-size: 6rem;
+            }
+
+            @media only screen and (max-width:25em) {
+                  font-size: 3rem;
+
+                  line-height: 4rem;
             }
       }
 
@@ -75,6 +111,10 @@
                   width: 100%;
             }
 
+            @media only screen and (max-width: 25em) {
+                  font-size: 2.4rem;
+            }
+
             
       }
 }
@@ -88,6 +128,15 @@
       @include responsive (no-desktop) {
             font-size: 3.4rem;
       }
+
+      @media only screen and (max-width: 25em) {
+            font-size: 2.4rem ;
+
+      }
+
+    
+
+      
 }
 
 .heading-quart {
@@ -100,6 +149,10 @@
 
       @include responsive (no-desktop) {
             font-size: 3.8rem;
+      }
+
+      @media only screen and (max-width: 25em) {
+            font-size: 1.8rem ;
       }
 }
 
@@ -117,8 +170,12 @@
             font-size: 3.6rem;
 
             line-height: 6.4rem;
+    }
 
-            margin-bottom: 3.6rem;
+      @media only screen and (max-width: 25em) {
+            font-size: 1.8rem ;
+
+            line-height: 1.8rem;
       }
 }
 

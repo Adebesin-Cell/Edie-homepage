@@ -12,6 +12,10 @@
       height: 5.3rem;
       cursor: pointer;
 
+      @media only screen and (max-width:767px) {
+            margin-top: 1.3rem;
+      }
+
       &--mt {
             margin-top: 0;
       }

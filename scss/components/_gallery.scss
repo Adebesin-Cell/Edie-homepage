@@ -4,7 +4,12 @@
       &__header {
             width: 44.8rem;
             backface-visibility: hidden;
-            @media only screen and (max-width:400px) {
+
+            @media only screen and (max-width: 767px) {
+                 margin-bottom: 4.8rem;
+             }
+       
+            @media only screen and (max-width:25em) {
                  width: 30rem;
             }
       }
@@ -17,24 +22,30 @@
                   margin-top: 18.8rem;
 
                   @include responsive (no-desktop) {
-                        margin-top: 4.8rem;
+                        margin-top: 8rem;
+                        margin-bottom: 2rem;
                   }
             }
             &--2 {
 
                   @include responsive (no-desktop) {
-                        margin-top: 10.8rem;
+                        margin-top: 8rem;
+                        margin-bottom: 2rem;
                   }
                   
             }
             &--3 {
                   margin-top: 10.6rem;
+                  @media only screen and (max-width: 767px) {
+                        margin-top: 8rem;
+                        margin-bottom: 2rem;
+                  }
             }
             &--4 {
                   margin-top: -2rem;
 
                   @include responsive (no-desktop) {
-                        margin-top: 10.8rem;
+                        margin-top: 8rem;
                   }
             }
             cursor: pointer;
@@ -54,18 +65,11 @@
 
             cursor: pointer;
 
-            // @include responsive (tablet-landscape) {
-            //       width: 45rem;
-            //       height: 45rem;
-            // }
-            // @include responsive (small-desktop) {
-            //       width: 35rem;
-            //       height: 35rem;
-            // }
-            // @include responsive (no-desktop) {
-            //       width: 100%;
-            //       height: 100%;
-            // }
+            @media only screen and (max-width: 767px) {
+                  width: 80%;
+                  margin: 0 auto;
+             }
+       
       }
 
       &__image {
@@ -81,6 +85,12 @@
       &__info {
             margin-top: 2rem;
             backface-visibility: hidden;
+
+            @media only screen and (max-width: 767px) {
+                  width: 80%;
+                  margin-right: auto;
+                  margin-left: auto;
+            }
       }
 
       &__text {

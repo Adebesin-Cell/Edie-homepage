@@ -11,6 +11,9 @@ const _open = () => {
 const _close =  () => {
       nav.style.width = "0%";
       nav.classList.remove("show");
+
+
 }
+
 open.addEventListener("click", _open);
 close.addEventListener("click",_close);

@@ -15,6 +15,11 @@
             height: 100%;
             position: relative;
 
+            @media only screen and (max-width: 767px) {
+                  width: 90%;
+                  height: 5.9rem;
+            }
+
       }
 
       &__input {
@@ -35,6 +40,11 @@
             &:focus {
                   outline: none;
                   border: 1px solid var(--gray-6);
+            }
+
+            @media only screen and (max-width: 767px) {
+                  padding-left: 1.9rem;
+                  padding-right: 1.9rem;
             }
 
             

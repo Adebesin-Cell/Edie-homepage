@@ -4,10 +4,14 @@
       @include responsive (small-desktop) {
             margin-left: 10rem !important;
       }
+
+      @include responsive (no-desktop) {
+            margin-left: 4rem !important;
+      }
       @include responsive (phone) {
             margin-left: 2rem !important;
       }
-      @media only screen and (max-width:400px) {
+      @media only screen and (max-width:25em) {
             margin-left: 0 !important;
       }
 }
@@ -17,7 +21,11 @@
 }
 .u-mt-xs {
       margin-top: 4.2rem !important;
-      @media only screen and (max-width:400px) {
+
+      @media only screen and (max-width:767px) {
+            margin-top: 3.3rem !important;
+      }
+      @media only screen and (max-width:25em) {
             margin-top: 0 !important;
       }
 }
@@ -27,8 +35,11 @@
 }
 .u-mb-xs {
       margin-bottom: 4.2rem !important;
+      @media only screen and (max-width:767px) {
+            margin-top: 2.2rem !important;
+      }
 
-      @media only screen and (max-width:400px) {
+      @media only screen and (max-width:25em) {
             margin-bottom: 0 !important;
       }
 }
@@ -61,11 +72,34 @@
 
 .md-u-ml {
       margin-left: 10rem !important;
+      @media only screen and (max-width:768px) {
+            margin-left: 0rem !important;
+      }
+
+      @media only screen and (max-width: 767px) {
+           margin-left: 4.9rem !important;
+      }
 
       @include responsive (phone) {
             margin-left: 6rem !important;
       }
-      @media only screen and (max-width:400px) {
+      @media only screen and (max-width:25em) {
             margin-left: 0 !important;
       }
 }
+
+
+.u-mr-n-ml-sm {
+
+      @media only screen and (max-width: 767px) {
+            margin-left: 4.9rem !important;
+            margin-right: 0  !important;
+       }
+ 
+      
+}
+
+// .u-mx {
+//       margin-right: 2rem !important;
+//       margin-left: 2rem !important;
+// }

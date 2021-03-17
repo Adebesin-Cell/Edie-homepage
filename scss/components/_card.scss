@@ -1,10 +1,15 @@
 .card {
       padding: 4.6rem 3.4rem;
 
-      height: 42.2rem;
+      min-height: 42.2rem;
       width: 34.1rem;
       cursor: pointer;
       backface-visibility: hidden;
+
+      @media only screen and (max-width:64em) {
+            width: 95%;
+            
+      }
 
       @include responsive (small-desktop) {
             width: 29rem;
@@ -14,18 +19,20 @@
             width: 80%;
 
             margin: 0 auto;
+
+            // margin-left: 4.5rem;
       }
 
       @media only screen and (max-width:400px) {
+            width: 60%;
+
+      }
+
+      /* @media only screen and (max-width:25em) {
             min-height: 45.2rem;
 
             width: 100%;
-      }
-
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-around;
-
+      } */
       border-radius: 24px;
       transition: transform 1s cubic-bezier(0.61, 1, 0.88, 1);
 
@@ -74,7 +81,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around; 
-            backface-visibility: hidden;     
+            backface-visibility: hidden;    
+            
+            @media only screen and (max-width: 767px) {
+                  margin-top: 3.5rem;
+            }
           
 
       }
@@ -105,7 +116,9 @@
             backface-visibility: hidden;
 
             @include responsive (no-desktop) {
-                  font-size: 1.8rem;
+                  font-size: 2.4rem;
+
+                  margin-top: 2.4rem;
             }
       }
 
@@ -130,5 +143,25 @@
 
             }
 
+            @media only screen and (max-width: 767px) {
+                 margin-top: 3rem;
+            }
+
       }
+
+      
+
+      @include responsive (phone) {
+            margin-bottom: 2.1rem;
+      }
+
+      
+      
+      &:last-child {
+           @include responsive (phone) {
+                 margin-bottom: 0;
+           }
+      } 
+
+      
 }

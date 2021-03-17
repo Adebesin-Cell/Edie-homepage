@@ -14,12 +14,7 @@
 
 .icon-box {
       display: flex;
-      // justify-content: space-around;
       align-items: center;
-
-      @include responsive (no-desktop) {
-            justify-content: center;
-      }
 }
 .icon {
       width: 2.4rem;

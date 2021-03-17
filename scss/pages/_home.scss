@@ -1,5 +1,9 @@
 .section-about {
       margin-top: 10.4rem;
+
+      @media only screen and (max-width: 767px) {
+            margin-top: 4.8rem;
+      }
 }
 
 .text {
@@ -10,14 +14,33 @@
 .main {
       width: 36.6rem;
       height: 14.1rem;
+
+      @media only screen and (max-width: 25em) {
+            margin-top: 4.2rem;
+      }
 }
 .section-works {
       margin-top: 20rem;
+
+      @media only screen and (max-width: 25em) {
+            margin-top: 10rem;
+      }
 }
 
 .box {
       width: 34.6rem;
       height: 10.8rem;
+      @media only screen and (max-width: 767px) {
+            margin-bottom: 7.2rem;
+      }
+
+      @media only screen and (max-width: 25em) {
+           margin-bottom: 3.6rem;
+      }
+
+      @include responsive (phone) {
+            margin-bottom: 3.6rem;
+      }
 }
 
 .section-gallery {
@@ -39,6 +62,7 @@
 .team__gallery {
       margin-top: -11rem;
       display: flex;
+      justify-content: flex-end;
 
       @include responsive (no-desktop) {
             margin-top: 0rem;
@@ -47,6 +71,13 @@
 
 .section-review {
       margin-top: 39rem;
+      @media only screen and (max-width:767px) {
+            margin-top: 10.31rem;
+      }
+
+      @media only screen and (max-width: 25em) {
+            margin-top: 10rem;
+      }
 }
 
 .footer {
@@ -60,12 +91,20 @@
             flex-direction: column;
             justify-content: end;
 
+            @media only screen and (max-width: 25em) {
+                 margin-top: 4.2rem;
+            }
+
             // align-items: flex-end;
 
       }
 
       padding-left: 5.2rem;
       padding-right: 5.2rem;
+
+      @media only screen and (max-width:767px) {
+            margin-top: 10.3rem;
+      }
 
 
 }
