@@ -3,7 +3,7 @@
   background: var(--white);
   @media only screen and (max-width: 600px) {
     padding-top: var(--span-s);
-    padding-bottom: calc(var(--span-s) + 5px);
+    // padding-bottom: calc(var(--span-s) + 5px);
   }
 
   &__wrapper {

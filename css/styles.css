@@ -447,7 +447,6 @@ body {
 @media only screen and (max-width: 600px) {
   .header {
     padding-top: var(--span-s);
-    padding-bottom: calc(var(--span-s) + 5px);
   }
 }
 
