@@ -366,6 +366,13 @@ body {
   background-color: var(--white);
 }
 
+@media only screen and (max-width: 600px) {
+  .footer__link {
+    font-size: var(--size-m);
+    line-height: 25px;
+  }
+}
+
 .footer__social {
   margin-top: var(--span-s);
 }

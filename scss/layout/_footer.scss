@@ -79,6 +79,10 @@
     text-decoration: none;
     @include link(1px);
     @include link_Underline(--white);
+    @media only screen and (max-width: 600px) {
+      font-size: var(--size-m);
+      line-height: 25px;
+    }
   }
 
   &__social {
