@@ -95,6 +95,10 @@
       letter-spacing: 0em;
       text-align: left;
       color: var(--white);
+      @media only screen and (max-width: 600px) {
+        font-size: calc(var(--size-s));
+        line-height: 21px;
+      }
     }
   }
 }

@@ -245,6 +245,13 @@ body {
   color: var(--white);
 }
 
+@media only screen and (max-width: 600px) {
+  .form__button span {
+    font-size: calc(var(--size-s));
+    line-height: 21px;
+  }
+}
+
 .footer {
   margin-top: var(--span-xl);
   background: var(--footer-bg);
