@@ -198,6 +198,10 @@ body {
   .form__input {
     font-size: calc(var(--size-s));
     line-height: 21px;
+    place-self: center;
+    justify-self: baseline;
+    height: 40px;
+    width: 100%;
   }
 }
 
