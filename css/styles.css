@@ -1135,6 +1135,12 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) and (min-width: 400px) {
+  .section-testimonial {
+    margin-top: calc(2 * var(--span-2xl) + var(--span-l));
+  }
+}
+
 .testimonial__text {
   font-family: var(--Poppins);
   font-size: calc(var(--size-xl) + 4px);

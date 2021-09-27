@@ -479,8 +479,13 @@
 .section-testimonial {
   @include section-space;
   background: var(--white);
+
   @media only screen and (max-width: 600px) {
     margin-top: var(--span-xl);
+  }
+
+  @media screen and (max-width: 600px) and (min-width: 400px) {
+    margin-top: calc(2 * var(--span-2xl) + var(--span-l));
   }
 }
 
