@@ -1,56 +1,39 @@
-@mixin root {
-      :root {
-            // GRAY color
-            --gray-1:#333333;
-            --gray-2: #4f4f4f;
-            --gray-3: #828282;
-            --gray-5: #E0E0E0;
-            --gray-4: #BDBDBD;
-            --gray-6: #f2f2f2;
-
-            // primary color
-
-            --blue: #2D9CDB;
-
-            --white: #FFFFFF;
-            --green: #27Ae60;
-            --red: #EB5757;
-
-
-            --bg-footer: #100E1D;
-
-      }
+@mixin section-space {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media only screen and (max-width: 600px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
-@mixin responsive($breakpoint) {
-      @if $breakpoint == phone {
-            @media only screen and (max-width:37.5em) {
-                  @content;
-            }
-      }
-       @if $breakpoint == no-desktop {
-            @media only screen and (max-width:47.9375em) {
-                  @content;
-            }
-      }
-      @if $breakpoint == tablet-portrait {
-            @media only screen and (max-width:56.25em) {
-                  @content;
-            }
-      }
-      @if $breakpoint == small-desktop {
-            @media only screen and (max-width:61.875em) {
-                  @content;
-            }
-      }
-      @if $breakpoint == tablet-landscape {
-            @media only screen and (max-width:75em) {
-                  @content;
-            }
-      }   
-      @if $breakpoint == big-desktop {
-            @media only screen and (min-width:112.5em) {
-                  @content;
-            }
-      }
+@mixin link_Underline($color) {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+    z-index: 3;
+    will-change: transform, color;
+    background-color: var($color);
+  }
+}
+
+@mixin link($height) {
+  &::before {
+    height: $height;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+    transition: transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s;
+  }
+  &:hover::before {
+    transform: scaleX(1);
+    transform-origin: 0 100%;
+    transition-timing-function: ease;
+  }
 }

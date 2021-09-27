@@ -1,14 +1,48 @@
-// FONT sizes
+:root {
+  --unit: 10px;
+  --Heebo: "Heebo", sans-serif;
+  --Poppins: "Poppins", sans-serif;
 
+  //font sizes
+  --size-xs: 12px;
+  --size-s: 14px;
+  --size-m: 16px;
+  --size-l: 24px;
+  --size-xl: 32px;
+  --size-2xl: 48px;
 
-$small: 1.4rem;
-$medium: 1.6rem;
-$large: 1.8rem;
+  //space
+  --span-xs: var(--unit);
+  --span-s: calc(var(--unit) * 2);
+  --span-m: calc(var(--unit) * 3);
+  --span-l: calc(var(--unit) * 4);
+  --span-xl: calc(var(--unit) * 5);
+  --span-2xl: calc(var(--unit) * 6);
 
+  //font weights
+  --weight-xsm: 300;
+  --weight-sm: 400;
+  --weight-md: 500;
+  --weight-lg: 600;
+  --weight-xlg: 700;
+  --weight-xxlg: 800;
+  --weight-2xxlg: 900;
 
+  //colors
 
-// FONT weight
-
-$fw-small: 400;
-$fw-normal: normal;
-$fw-medium: 500;
+  --white: #ffffff;
+  --logo: #333333;
+  --header-link: #333333;
+  --text-blue: #2d9cdb;
+  --text-gray: #333333;
+  --text-gray-2: #4f4f4f;
+  --text-gray-3: #828282;
+  --gray-6: #f2f2f2;
+  --blue: #2d9cdb;
+  --green: #27ae60;
+  --red: #eb5757;
+  --text-gray-4: #bdbdbd;
+  --button: #e0e0e0;
+  --text-red: #eb5757;
+  --footer-bg: #100e1d;
+}

@@ -8,426 +8,476 @@
   maximum-scale=5"
     />
 
-    <link rel="icon" href="images/devchallenges.png" />
+    <meta
+      name="description"
+      content="We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time."
+    />
 
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="https://devchallenges.io/"
+      href="assets/images/devlogo.png"
     />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="assets/aos.css"> -->
-   <!-- <link rel="stylesheet" href="css/material-icons.css"> -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main.css.map">
 
-    <title>Devchallenges | Edie Homepage</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Edie | We create beautiful and fast web services</title>
   </head>
   <body>
-
-    <div class="navbar" id="nav">
-      <div class="navbar__header">
-        <div class="logo-box" data-aos="fade-right">
-          <h1 class="logo">
-            Edie
-          </h1>
-        </div>
-
-        <div class="navbar__close" id="close">
-          <span class="material-icons ">
-            close
-          </span>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo-box">
+            <a href="#" class="header__logo-link">
+              <p class="header__logo">Edie</p>
+            </a>
+          </div>
+          <div class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a href="#" class="header__link" name="Home"> Home </a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__link" name="Services"> Services </a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__link" name="Our Works">
+                  Our Works
+                </a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__link" name="Clients "> Clients </a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__link" name="Contact "> Contact </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <ul class="navbar__nav">
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Home</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Services</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Our works</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Clients</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Contact</a>
-        </li>
-      </ul>
-      
-    </div>
-
-    <!-- close -->
-    <!-- the content of the body starts with a wrapper -->
-    <div class="container-fluid">
-      <div class="row">
-        <!-- header starts here -->
-        <header class="col-1-of-1 header">
-          <!-- <logo box> -->
-          <div class="logo-box" data-aos="fade-right">
-            <h1 class="logo">
-              Edie
+    </header>
+    <section class="section-intro">
+      <div class="container">
+        <div class="intro">
+          <div class="intro__text">
+            <p class="intro__paragraph">Unhappy with your website?</p>
+            <h1 class="intro__header">
+              <span> We create beautiful </span>
+              <span> and fast web services </span>
             </h1>
           </div>
-          <div class="navbar__toggle" id="open">
-            <span class="material-icons">
-              menu
-            </span>
+          <div class="intro__banner">
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="assets/images/hero-banner--mobile.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcset="assets/images/hero-banner--ipad.jpg"
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="assets/images/hero-banner--desktop.jpg"
+              />
+              <img
+                src="assets/images/hero-banner.jpg"
+                alt="hero"
+                class="intro__image"
+              />
+            </picture>
+            <!-- <img
+              src="assets/images/hero-banner--mobile.jpg"
+              alt="hero"
+              class="intro__image"
+            /> -->
           </div>
-          <!-- </logo box> -->
-          <!-- <Navigation> -->
-          <ul class="header-navigation"  data-aos="fade-down">
-            <li class="header-navigation__list"><a href="#" class="header-navigation__link modified--link-padding-left">Home</a></li>
-            <li class="header-navigation__list"><a href="#" class="header-navigation__link">Services</a></li>
-            <li class="header-navigation__list"><a href="#" class="header-navigation__link">Our works</a></li>
-            <li class="header-navigation__list"><a href="#" class="header-navigation__link">Clients</a></li>
-            <li class="header-navigation__list"><a href="#" class="header-navigation__link modified--link-padding-right">Contact</a></li>
-          </ul>
-          <!-- </Navigation> -->
-        </header>
-        <!-- header ends here -->
-      </div>
-      <!-- section about starts -->
-      <section class=" section-about">
-        <div class="row">
-          <!--  -->
-          <div class="col-1-of-4 u-ml-md u-mr-hg">
-            <div class="cta-box"  data-aos="fade-up">
-              <a href="#" class="cta">Unhappy with your website?</a>
-            </div>
-          </div>
-          <div class="col-1-of-2 u-ml-md u-mr-hg">
-            <div class="text"  data-aos="fade-down">
-              <h1 class="heading-primary">
-                We create beautiful and fast web services
-              </h1>
-            </div>   
-          </div>
-        </div>
-      </section>
-      <section class="section-features">
-        <div class="row u-mt-xs u-mb-xs">
-          <div class="col-1-of-1 ">
-            <div class="hero "  data-aos="fade-left">
-              <img src="images/heroImage.jpg" alt="Hero image" class="hero__image">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3 u-ml-md u-mr-hg sm-col-1-of-2">
-            <div class="main"  data-aos="fade-right">
-              <h1 class="heading-primary">
-                Story, emotion
-                and purpose
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3  u-ml-md u-mr-hg sm-col-1-of-2">
-            <p class="paragraph u-mt-xs"  data-aos="fade-left">
-              We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
+          <div class="intro__overview">
+            <h1 class="intro__heading">
+              <span> Story, emotion </span>
+              <span> and purpose </span>
+            </h1>
+            <p class="intro__message">
+              We help transform your ideas into real world applications that
+              will outperform your toughest competition and help you achieve
+              your strategic goals in short period of time.
             </p>
-            <div class="cta-box cta-box--sm u-mt-xs" data-aos="fade-right">
-              <a href="#" class="cta cta--sm">Want us to contact you?</a>
+          </div>
+          <form action="#" class="form">
+            <p class="form__text">Want us to contact you?</p>
+            <div class="form__group">
+              <input
+                type="email"
+                class="form__input"
+                placeholder="Email"
+                required
+              />
+              <button class="form__button">
+                <span>Join</span>
+              </button>
             </div>
-            <form action="#" class="form" data-aos="fade-up">
-              <div class="form-group">
-                <button type="submit" class="button">Join</button>
-                <label for="email" class="form__label">text</label>
-                <input type="email" id="email" class="form__input" placeholder="Email" required>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section-offers">
+      <div class="container">
+        <div class="offers">
+          <h1 class="offers__header">
+            <span> We offer high </span>
+            <span> demand services </span>
+          </h1>
+          <div class="offers__wrapper">
+            <div class="offers__card">
+              <div class="offers__icon offers__icon--1">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g>
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z"
+                      />
+                    </g>
+                  </svg>
+                </span>
               </div>
-            </form>
-          </div>
-          </div>
-      </section>
-      <!-- section about ends -->
-      <section class="section-works">
-        <div class="row">
-          <div class="col-1-of-3 u-mr-hg sm-col-1-of-2 md-u-ml">
-            <div class="box " data-aos="fade-right">
-              <h2 class="heading-secondary">
-                We offer high demand services  
-              </h2>
+              <h1 class="offers__title">UI/UX Design</h1>
+              <p class="offers__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <a href="#" class="btn btn--get-started" name="Get started">
+                Get started
+              </a>
+            </div>
+            <div class="offers__card">
+              <div class="offers__icon offers__icon--2">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g>
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </div>
+              <h1 class="offers__title">Front End</h1>
+              <p class="offers__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <a href="#" class="btn btn--get-started" name="Get started">
+                Get started
+              </a>
+            </div>
+            <div class="offers__card">
+              <div class="offers__icon offers__icon--3">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    fill="#000000"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <h1 class="offers__title">Back End</h1>
+              <p class="offers__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <a href="#" class="btn btn--get-started" name="Get started">
+                Get started
+              </a>
             </div>
           </div>
         </div>
-          <div class="row">
-            <div class="container">
-              <div class="row u-mx">
-                <div class="col-1-of-3 card-col">
-                  <div class="card">
-                    <div class="item--1" data-aos="fade-right">
-                      <div class="card__icon card__icon--blue">
-                        <span class="material-icons card__icon--size card__icon--white">
-                          create
-                        </span>
-                      </div>
-                      <div class="card__details">
-                        <h3 class="card__header">
-                          UI/UX Design
-                        </h3>
-                        <div class="card__paragraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
-                        </div>
-                        <a href="#" class="card__btn">Get started</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-1-of-3 card-col">
-                  <div class="card">
-                    <div class="item--2" data-aos="fade-up">
-                      <div class="card__icon card__icon--green">
-                        <span class="material-icons card_icon--size card__icon--white">
-                          code 
-                        </span>
-                      </div>
-                      <div class="card__details">
-                        <h3 class="card__header">
-                          Front End
-                        </h3>
-                        <div class="card__paragraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
-                        </div>
-    
-                        <a href="#" class="card__btn">Get started</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-1-of-3 card-col">
-                  <div class="card">
-                    <div class="item--3" data-aos="fade-left">
-                      <div class="card__icon card__icon--red">
-                        <span class="material-icons card_icon--size card__icon--white">
-                          storage
-                        </span>
-                      </div>
-                      <div class="card__details">
-                        <h3 class="card__header">
-                          Back End
-                        </h3>
-                        <div class="card__paragraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
-                        </div>
-                        <a href="#" class="card__btn">Get started</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      </div>
+    </section>
+    <section class="section-works">
+      <div class="container">
+        <div class="works">
+          <h1 class="works__header">
+            <span> Good design means </span>
+            <span> good business </span>
+          </h1>
+          <div class="works__wrapper">
+            <div class="works__card works__card--1">
+              <div class="works__image-box">
+                <img
+                  src="assets/images/smarthome-banner.jpg"
+                  alt="Smart home dashboard - Full stack application"
+                  class="works__image"
+                />
+              </div>
+              <div class="works__details">
+                <h3 class="works__title">Full stack application</h3>
+                <h1 class="works__name">Smart home dashboard</h1>
               </div>
             </div>
-           
-          </div>
-      </section>
-      <section class="section-gallery">
-        <div class="row">
-          <div class="col-1-of-3 u-mr-hg u-mr-n-ml-sm">
-            <div class="gallery__header" data-aos="fade-down">
-              <h2 class="heading-secondary heading-secondary--sub">
-                Good design means good business
-              </h2>
-            </div>            
-          </div>
-        </div>
-          <div class="row">
-
-            <div class="col-1-of-2 gallery__box gallery__box--1" data-aos="fade-right">
-              <div class="gallery__image-box">
-                <img src="images/smarthome.jpg" alt="smarthome image" class="gallery__image gallery__image--1">
+            <div class="works__card works__card--2">
+              <div class="works__image-box">
+                <img
+                  src="assets/images/onboard-banner.png"
+                  alt="Onboard application - UX/UI design"
+                  class="works__image"
+                />
               </div>
-              <div class="gallery__info">
-                <p class="gallery__text">
-                  Full stack application
-                </p>
-                <h3 class="heading-tertiary">
-                  Smart home dashboard
-                </h3>
-              </div>             
+              <div class="works__details">
+                <h3 class="works__title">UX/UI design</h3>
+                <h1 class="works__name">Onboard application</h1>
+              </div>
             </div>
-            <div class="col-1-of-2 gallery__box gallery__box--2 " data-aos="fade-left">
-                <div class="gallery__image-box">
-                  <img src="images/onboard.png" alt="onboard image" class="gallery__image gallery__image--2">
-                </div>
-                <div class="gallery__info">
-                  <p class="gallery__text">
-                    UX/UI design
-                  </p>
-                  <h3 class="heading-tertiary">
-                    Onboard application
-                  </h3>
-                </div>             
+            <div class="works__card works__card--3">
+              <div class="works__image-box">
+                <img
+                  src="assets/images/booking-banner.png"
+                  alt="Booking system - Mobile application"
+                  class="works__image"
+                />
+              </div>
+              <div class="works__details">
+                <h3 class="works__title">Mobile application</h3>
+                <h1 class="works__name">Booking system</h1>
+              </div>
+            </div>
+            <div class="works__card works__card--4">
+              <div class="works__image-box">
+                <img
+                  src="assets/images/juice-product-banner.png"
+                  alt="Juice product homepage - Front End application"
+                  class="works__image"
+                />
+              </div>
+              <div class="works__details">
+                <h3 class="works__title">Front End application</h3>
+                <h1 class="works__name">Juice product homepage</h1>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-1-of-2 gallery__box gallery__box--3" data-aos="fade-up">
-                <div class="gallery__image-box">
-                  <img src="images/booking.png" alt="booking image" class="gallery__image gallery__image--3">
-                </div>
-                <div class="gallery__info">
-                  <p class="gallery__text">
-                    Mobile application
-                  </p>
-                  <h3 class="heading-tertiary">
-                    Booking system
-                  </h3>
-                </div>             
-            </div>
-            <div class="col-1-of-2 gallery__box gallery__box--4" data-aos="fade-down">
-                <div class="gallery__image-box">
-                  <img src="images/juice-product.png" alt="juice-product image" class="gallery__image gallery__image--4">
-                </div>
-                <div class="gallery__info">
-                  <p class="gallery__text">
-                    Front End application
-                  </p>
-                  <h3 class="heading-tertiary">
-                    Juice product homepage
-                  </h3>
-                </div>   
-            </div>
-            <a href="#" class="btn btn--animate u-mt-n-sm u-ml-shg" data-aos="fade-left">
-              See more
-              <span class="material-icons icon__sm">
-                trending_flat
+          <div class="works__extra">
+            <a href="#" class="see-more" name="see more">
+              <span> see more </span>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    />
+                  </g>
+                </svg>
               </span>
             </a>
           </div>
-
-      </section>
-      <section class="section-team">
-        <div class="row">
-          <div class="col-1-of-3">
-            <div class="team"  data-aos="fade-right">
-              <h4 class="heading-quart">
-                Meet the team
-              </h4> 
-              <h2 class="heading-secondary heading-secondary--team">
-                We are chilled and a laidback team
-              </h2>
-  
-              <p class="team__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+      </div>
+    </section>
+    <section class="section-team">
+      <div class="container">
+        <div class="team">
+          <div class="team__text">
+            <h3 class="team__banner">Meet the team</h3>
+            <h1 class="team__header">
+              <span>We are chilled</span> <span> and a laidback team </span>
+            </h1>
+            <p class="team__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+            </p>
+          </div>
+          <div class="team__image-gallery">
+            <div class="team__image-box team__image-box--1">
+              <img
+                src="assets/images/person--3.png"
+                alt="person 3"
+                class="team__image"
+              />
+            </div>
+            <div class="team__image-vertical">
+              <div class="team__image-box team__image-box--2">
+                <img
+                  src="assets/images/person--1.png"
+                  alt="person 1"
+                  class="team__image"
+                />
+              </div>
+              <div class="team__image-box team__image-box--3">
+                <img
+                  src="assets/images/person--2.png"
+                  alt="person 2"
+                  class="team__image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-testimonial">
+      <div class="container">
+        <div class="testimonial">
+          <p class="testimonial__text">
+            “Fast and outstanding results. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </p>
+          <div class="testimonial__details">
+            <div class="testimonial__image-box">
+              <img
+                src="assets/images/person--4.png"
+                alt="Carlos Tran - The Decorate Gatsby"
+                class="testimonial__image"
+              />
+            </div>
+            <div class="testimonial__info">
+              <h1 class="testimonial__name">Carlos Tran</h1>
+              <p class="testimonial__title">The Decorate Gatsby</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__navigation">
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a href="#" class="footer__link" name="Home"> Home </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a href="#" class="footer__link" name="Services"> Services </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a href="#" class="footer__link" name="Our Works">
+                  Our Works
+                </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a href="#" class="footer__link" name="Clients"> Clients </a>
+              </li>
+              <li class="footer__navigation-item">
+                <a href="#" class="footer__link" name="Contact"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation">
+            <div class="footer__logo-box">
+              <a href="#" class="footer__logo-link">
+                <p class="footer__logo">Edie</p>
+              </a>
+            </div>
+            <div class="footer__social">
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__icon" name="Instagram">
+                    <span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M23.0949 1.9064C22.4907 1.30204 21.7667 1 20.9232 1H3.07926C2.23547 1 1.51164 1.30215 0.907288 1.9064C0.303041 2.51048 0.000999451 3.23442 0.000999451 4.07804V21.9218C0.000999451 22.7653 0.302986 23.4894 0.907288 24.0935C1.51164 24.6977 2.23563 25 3.07926 25H20.923C21.7663 25 22.4906 24.6977 23.0948 24.0935C23.6991 23.4894 24.0009 22.7653 24.0009 21.9218V4.07804C24.0008 3.23425 23.6991 2.5107 23.0949 1.9064ZM8.61845 9.64832C9.56108 8.737 10.6939 8.28112 12.0169 8.28112C13.35 8.28112 14.488 8.737 15.4308 9.64832C16.3737 10.5598 16.8448 11.6615 16.8448 12.9531C16.8448 14.2446 16.3737 15.3463 15.4308 16.2575C14.488 17.1692 13.3504 17.625 12.0169 17.625C10.694 17.625 9.56124 17.1688 8.61845 16.2575C7.67561 15.3462 7.20424 14.2446 7.20424 12.9531C7.20424 11.6615 7.67561 10.5599 8.61845 9.64832ZM21.2826 21.2814C21.2826 21.5521 21.1885 21.7785 21.0012 21.9609C20.8133 22.1432 20.5897 22.2343 20.3291 22.2343H3.62621C3.35541 22.2343 3.12868 22.1432 2.94655 21.9609C2.76414 21.7789 2.67302 21.5521 2.67302 21.2814V11.1561H4.87607C4.66784 11.8124 4.56369 12.4948 4.56369 13.203C4.56369 15.2034 5.29277 16.9089 6.75109 18.3206C8.20958 19.7318 9.96475 20.4377 12.0168 20.4377C13.371 20.4377 14.6209 20.1147 15.7671 19.4689C16.913 18.8227 17.8186 17.9453 18.4858 16.8359C19.1525 15.7264 19.4859 14.5154 19.4859 13.203C19.4859 12.4949 19.3813 11.8126 19.1731 11.1561H21.2827V21.2815H21.2826V21.2814ZM21.2826 7.32793C21.2826 7.63002 21.1784 7.88527 20.9697 8.09357C20.7615 8.30202 20.5064 8.40611 20.2042 8.40611H17.4855C17.1836 8.40611 16.9281 8.30197 16.7199 8.09357C16.5116 7.88527 16.4075 7.63002 16.4075 7.32793V4.75004C16.4075 4.45834 16.5116 4.20578 16.7199 3.99217C16.9282 3.77868 17.1836 3.6718 17.4855 3.6718H20.2042C20.5064 3.6718 20.7616 3.77863 20.9697 3.99217C21.1784 4.20578 21.2826 4.45834 21.2826 4.75004V7.32793Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__icon" name="LinkedIn"
+                    ><span>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M22.6796 2.32019C21.7998 1.44012 20.7397 1 19.5002 1H4.50013C3.26066 1 2.20059 1.44012 1.32035 2.32019C0.440277 3.20043 0.00015831 4.26044 0.00015831 5.49997V20.4999C0.00015831 21.7393 0.440277 22.7994 1.32035 23.6797C2.20059 24.5599 3.26066 25 4.50013 25H19.5001C20.7395 25 21.7996 24.5599 22.6795 23.6797C23.5597 22.7994 23.9998 21.7394 23.9998 20.4999V5.49997C23.9998 4.26044 23.5596 3.20026 22.6796 2.32019ZM7.31257 21.0936H3.70319V10.2498H7.31257V21.0936ZM6.98465 8.2422C6.60971 8.60159 6.11486 8.78132 5.50022 8.78132H5.48446C4.89077 8.78132 4.40917 8.60159 4.03927 8.2422C3.66931 7.8828 3.48444 7.43754 3.48444 6.9063C3.48444 6.36466 3.67467 5.91666 4.05476 5.56241C4.43511 5.20827 4.92722 5.03112 5.5313 5.03112C6.13544 5.03112 6.61983 5.20827 6.98448 5.56241C7.34902 5.91666 7.53657 6.36466 7.54692 6.9063C7.54686 7.43732 7.35959 7.88258 6.98465 8.2422ZM20.297 21.0936H16.6876V15.2968C16.6876 13.6616 16.0836 12.8438 14.8752 12.8438C14.4169 12.8438 14.0313 12.9714 13.7189 13.2266C13.4062 13.4817 13.1719 13.7916 13.0158 14.1565C12.9428 14.3438 12.9064 14.6354 12.9064 15.0311V21.0935H9.29705C9.3283 14.552 9.3283 10.9373 9.29705 10.2497H12.9064V11.7807C13.6653 10.5941 14.743 9.99961 16.1409 9.99961C17.3909 9.99961 18.3962 10.4112 19.1566 11.2339C19.917 12.0569 20.2972 13.2706 20.2972 14.8743V21.0936H20.297Z"
+                            fill="#F2F2F2"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg> </span
+                  ></a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__icon" name="Twitter"
+                    ><span
+                      ><svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M23.6796 0.320191C22.7998 -0.559882 21.7397 -1 20.5002 -1H5.50013C4.26066 -1 3.20059 -0.559882 2.32035 0.320191C1.44028 1.20043 1.00016 2.26044 1.00016 3.49997V18.4999C1.00016 19.7393 1.44028 20.7994 2.32035 21.6797C3.20059 22.5599 4.26066 23 5.50013 23H20.5001C21.7395 23 22.7996 22.5599 23.6795 21.6797C24.5597 20.7994 24.9998 19.7394 24.9998 18.4999V3.49997C24.9998 2.26044 24.5596 1.20026 23.6796 0.320191ZM19.3595 8.23444C19.3699 8.32819 19.3752 8.46856 19.3752 8.65639C19.3752 9.53143 19.2475 10.409 18.9924 11.289C18.7373 12.1694 18.3466 13.0131 17.8204 13.8204C17.2947 14.6275 16.6671 15.3413 15.938 15.961C15.2087 16.5805 14.3339 17.0756 13.3128 17.4451C12.2922 17.8151 11.1983 18.0002 10.0317 18.0002C8.21937 18.0002 6.5423 17.5103 5.00058 16.5315C5.25057 16.5626 5.51113 16.5783 5.78181 16.5783C7.29229 16.5783 8.65167 16.1096 9.86005 15.1718C9.15182 15.1617 8.5189 14.9431 7.96166 14.5156C7.40426 14.0885 7.01635 13.5469 6.79755 12.8907C7.06829 12.9322 7.27138 12.9529 7.40678 12.9529C7.63592 12.9529 7.90163 12.9113 8.20361 12.8282C7.44323 12.6821 6.8027 12.3049 6.28186 11.6955C5.7609 11.086 5.50051 10.3908 5.50051 9.60958V9.57833C6.05244 9.83856 6.57328 9.97395 7.06293 9.98452C6.11499 9.34897 5.64105 8.43764 5.64105 7.25017C5.64105 6.66677 5.79199 6.11474 6.09409 5.59389C6.91691 6.60438 7.91711 7.41156 9.09403 8.0157C10.2711 8.61978 11.5316 8.95849 12.8753 9.03133C12.8233 8.83343 12.7972 8.58333 12.7972 8.28134C12.7972 7.37495 13.1175 6.60165 13.7582 5.96095C14.3987 5.32031 15.1722 4.99988 16.0783 4.99988C17.0369 4.99988 17.8339 5.34374 18.4692 6.03128C19.188 5.89588 19.8862 5.63012 20.5631 5.23444C20.3028 6.03631 19.8181 6.64576 19.1101 7.06245C19.787 6.96854 20.417 6.79155 21.0002 6.53116C20.5628 7.19779 20.0157 7.76548 19.3595 8.23444Z"
+                            fill="#F2F2F2"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg> </span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__form">
+            <form action="#" class="form">
+              <p class="form__text form__text--footer">
+                Want us to contact you?
               </p>
-            </div>
-          </div>
-          <div class="col-2-of-3 team__gallery">
-            <div class="team__image-box team__image-box--1" data-aos="fade-right">
-              <img src="images/person3.png" alt="person on the team" class="team__image team__image--1">
-            </div>
-            <div class="wrapper">
-              <div class="team__image-box"  data-aos="fade-down">
-                <img src="images/person1.png" alt="person on the team" class="team__image team__image--2">
+              <div class="form__group form__group--footer">
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="Email"
+                  required
+                />
+                <button class="form__button">
+                  <span>Join</span>
+                </button>
               </div>
-              <div class="team__image-box"  data-aos="fade-up">
-                <img src="images/person2.png" alt="person on the team" class="team__image team__image--3">
-              </div>
-            </div>            
+            </form>
           </div>
         </div>
-      </section>
-      <section class="section-review">
-        <div class="row">
-          <div class="col-1-of-1">
-            <h2 class="heading-secondary heading-secondary--review"  data-aos="fade-right">
-              “Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
-            </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3 u-mr-hg">
-            <div class="comment"  data-aos="fade-up">
-              <figure class="comment__image-box">
-                <div class="comment__box">
-                  <img src="images/person4.png" alt="The Decorate Gatsby" class="comment__image">
-                </div>
-                <figcaption class="comment__details">
-                  <h3 class="comment__header">
-                    Carlos Tran
-                  </h3>
-                  <p class="comment__title">
-                    The Decorate Gatsby
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="row footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-1-of-2 u-mt-md">
-              <div class="row">
-                <div class="col-1-of-2">
-                  <ul class="footer__navigation" data-aos="fade-right">
-                    <li class="footer__navigation__item">
-                      <a href="#" class="footer__navigation__link">Home</a>
-                    </li>
-                    <li class="footer__navigation__item">
-                      <a href="#" class="footer__navigation__link">Services</a>
-                    </li>
-                    <li class="footer__navigation__item">
-                      <a href="#" class="footer__navigation__link">Our Works</a>
-                    </li>
-                    <li class="footer__navigation__item">
-                      <a href="#" class="footer__navigation__link">Clients</a>
-                    </li>
-                    <li class="footer__navigation__item">
-                      <a href="#" class="footer__navigation__link">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-1-of-2 ">
-                  <div class="logo-box logo-box--mt" data-aos="fade-down">
-                    <h1 class="logo logo--white">
-                      Edie
-                    </h1>
-                  </div>
-                  <div class="icon-box" data-aos="fade-up">
-                    <svg class="icon" data-aos="fade-right">
-                      <use xlink:href=images/sprite.svg#instagram></use>
-                    </svg>
-                    <svg class="icon" data-aos="fade-down">
-                      <use xlink:href=images/sprite.svg#linkedin></use>
-                    </svg>
-                    <svg class="icon" data-aos="fade-left">
-                      <use xlink:href=images/sprite.svg#twitter></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-1-of-2 footer-form">
-              <div class="cta-box cta-box--sm u-mt-xs ml-n" data-aos="fade-right">
-                <a href="#" class="cta cta--sm">Want us to contact you?</a>
-              </div>
-              <form action="#" class="form ml-n" data-aos="fade-up">
-                <div class="form-group">
-                  <button type="submit" class="button">Join</button>
-                  <label for="email" class="form__label">text</label>
-                  <input type="email" id="email" class="form__input" placeholder="Email" required>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script src="assets/aos.js"></script>
-
-
-    <script>
-      AOS.init();
-    </script>
-
+      </div>
+    </footer>
     <script src="Js/App.js"></script>
   </body>
 </html>

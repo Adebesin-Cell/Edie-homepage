@@ -1,0 +1,109 @@
+.footer {
+  margin-top: var(--span-xl);
+  background: var(--footer-bg);
+  @include section-space;
+  padding-bottom: 100px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__navigation {
+    @media only screen and (max-width: 768px) {
+      flex: 0 0 50%;
+    }
+    @media only screen and (max-width: 600px) {
+      flex: 0 0 100%;
+    }
+
+    &:nth-child(2) {
+      @media only screen and (max-width: 768px) {
+        order: -1;
+      }
+      @media only screen and (max-width: 600px) {
+        margin-bottom: var(--span-m);
+      }
+    }
+    &-list {
+      list-style-type: none;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        padding-bottom: var(--span-xs);
+      }
+    }
+  }
+
+  &__form {
+    @media only screen and (max-width: 768px) {
+      flex: 0 0 75%;
+    }
+    @media only screen and (max-width: 600px) {
+      margin-top: var(--span-m);
+      flex: 0 0 100%;
+    }
+  }
+
+  &__logo {
+    font-family: var(--Heebo);
+    font-size: calc(var(--size-xl) + 4px);
+    font-style: normal;
+    font-weight: var(--weight-xxlg);
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+
+    &-link {
+      text-decoration: none;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: var(--Poppins);
+    font-size: calc(var(--size-m) + 2px);
+    font-style: normal;
+    font-weight: var(--weight-sm);
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+    text-decoration: none;
+    @include link(1px);
+    @include link_Underline(--white);
+  }
+
+  &__social {
+    margin-top: var(--span-s);
+    &-list {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: var(--span-xs);
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

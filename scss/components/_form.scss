@@ -1,56 +1,96 @@
 .form {
-      width:35rem;
-      height: 5.7rem;
+  &__text {
+    margin-top: var(--span-l);
+    margin-bottom: var(--span-xs);
+    font-family: var(--Poppins);
+    font-size: var(--size-s);
+    font-style: normal;
+    font-weight: var(--weight-md);
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--text-gray-3);
+    max-width: 370px;
+    @media only screen and (max-width: 600px) {
+      margin-top: var(--span-s);
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 18px;
+    }
 
-      @include responsive (no-desktop ) {
-            width: 100%;
-      }
+    &--footer {
+      margin-top: 0;
+      color: var(--white);
+    }
+  }
 
-      &__label {
-            display: none;
-      }
+  &__group {
+    background: var(--gray-6);
+    border-radius: 12px;
+    max-width: 350px;
+    padding: calc(var(--span-xs) / 2);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 
-      &-group {
-            width: 100%;
-            height: 100%;
-            position: relative;
+    &--footer {
+      max-width: 100%;
+    }
+  }
 
-            @media only screen and (max-width: 767px) {
-                  width: 90%;
-                  height: 5.9rem;
-            }
+  &__input {
+    display: block;
+    border: none;
+    outline: none;
+    height: 60px;
+    background: transparent;
+    padding: var(--span-xs) calc(var(--span-xs) + 5px);
+    font-family: var(--Poppins);
+    font-size: calc(var(--size-m) + 2px);
+    font-style: normal;
+    font-weight: var(--weight-md);
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--text-gray-2);
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-s));
+      line-height: 21px;
+    }
+  }
 
-      }
+  &::-webkit-input-placeholder {
+    font-family: var(--Poppins);
+    font-size: calc(var(--size-m) + 2px);
+    font-style: normal;
+    font-weight: var(--weight-md);
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--text-gray-4);
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-s));
+      line-height: 21px;
+    }
+  }
 
-      &__input {
-            width: 100%;
-            height: 100%;
-            display: block;
-            background-color: var(--gray-6);
-            font-family: inherit;
-            font-size: 1.8rem;
-            border-radius: 12px;
-            color: var(--gray-1);
+  &__button {
+    cursor: pointer;
+    display: block;
+    border: none;
+    outline: none;
+    padding: var(--span-xs) var(--span-m);
+    max-height: 100%;
+    border-radius: 12px;
+    background: var(--blue);
 
-            padding: 1.5rem 2.1rem;
-
-            border: 1px solid var(--gray-6);
-            outline: none;
-
-            &:focus {
-                  outline: none;
-                  border: 1px solid var(--gray-6);
-            }
-
-            @media only screen and (max-width: 767px) {
-                  padding-left: 1.9rem;
-                  padding-right: 1.9rem;
-            }
-
-            
-      }
-}
-
-::-webkit-input-placeholder {
-      color: var(--gray-4);
+    span {
+      font-family: var(--Poppins);
+      font-size: calc(var(--size-m) + 2px);
+      font-style: normal;
+      font-weight: var(--weight-md);
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: var(--white);
+    }
+  }
 }
