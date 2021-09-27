@@ -3,7 +3,6 @@
   background: var(--white);
   @media only screen and (max-width: 600px) {
     padding-top: var(--span-s);
-    // padding-bottom: calc(var(--span-s) + 5px);
   }
 
   &__wrapper {
@@ -21,6 +20,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--logo);
+    @media only screen and (max-width: 600px) {
+      font-size: var(--size-l);
+      line-height: 36px;
+    }
 
     &-link {
       text-decoration: none;
@@ -67,5 +70,35 @@
     text-decoration: none;
     @include link_Underline(--header-link);
     @include link(2px);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    @media only screen and (max-width: 768px) {
+      width: 64px;
+      height: 64px;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 48px;
+      height: 48px;
+    }
+
+    svg {
+      fill: var(--text-gray);
+      @media only screen and (max-width: 768px) {
+        width: 36px;
+        height: 36px;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    @media only screen and (min-width: 769px) {
+      display: none;
+    }
   }
 }
