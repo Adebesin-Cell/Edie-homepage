@@ -23,7 +23,7 @@
         order: -1;
       }
       @media only screen and (max-width: 600px) {
-        margin-bottom: var(--span-m);
+        margin-bottom: var(--span-2xl);
       }
     }
     &-list {
@@ -42,7 +42,7 @@
       flex: 0 0 75%;
     }
     @media only screen and (max-width: 600px) {
-      margin-top: var(--span-m);
+      margin-top: var(--span-2xl);
       flex: 0 0 100%;
     }
   }
