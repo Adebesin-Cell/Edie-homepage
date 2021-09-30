@@ -273,26 +273,15 @@ body {
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 768px) {
-  .footer__navigation {
-    flex: 0 0 50%;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .footer__navigation {
     flex: 0 0 100%;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .footer__navigation:nth-child(2) {
-    order: -1;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .footer__navigation:nth-child(2) {
+    order: -1;
     margin-bottom: var(--span-2xl);
   }
 }
@@ -303,12 +292,6 @@ body {
 
 .footer__navigation-item:not(:last-child) {
   padding-bottom: var(--span-xs);
-}
-
-@media only screen and (max-width: 768px) {
-  .footer__form {
-    flex: 0 0 75%;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -622,6 +605,13 @@ body {
   color: var(--text-blue);
 }
 
+@media only screen and (max-width: 1140px) {
+  .intro__paragraph {
+    font-size: var(--size-m);
+    line-height: 25px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .intro__paragraph {
     font-size: var(--size-s);
@@ -640,6 +630,13 @@ body {
   color: var(--text-gray);
 }
 
+@media only screen and (max-width: 1140px) {
+  .intro__header {
+    font-size: calc(var(--size-xl) + 4px);
+    line-height: 54px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .intro__header {
     font-size: var(--size-l);
@@ -653,6 +650,12 @@ body {
 
 .intro__banner {
   margin-top: var(--span-l);
+}
+
+@media only screen and (max-width: 1140px) {
+  .intro__banner {
+    margin-top: var(--span-s);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -700,6 +703,14 @@ body {
   color: var(--text-gray);
 }
 
+@media only screen and (max-width: 1140px) {
+  .intro__heading {
+    margin-top: var(--span-s);
+    font-size: calc(var(--size-xl) + 4px);
+    line-height: 54px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .intro__heading {
     margin-top: var(--span-s);
@@ -723,6 +734,14 @@ body {
   text-align: left;
   color: var(--text-gray-2);
   max-width: 370px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .intro__message {
+    margin-top: var(--span-s);
+    font-size: var(--size-m);
+    line-height: 25px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -755,6 +774,13 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--text-gray);
+}
+
+@media only screen and (max-width: 1140px) {
+  .offers__header {
+    font-size: calc(var(--size-xl) + 4px);
+    line-height: 54px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1227,6 +1253,14 @@ body {
   text-align: left;
   color: var(--text-gray);
   max-width: 940px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .testimonial__text {
+    font-size: calc(var(--size-xl));
+    line-height: 48px;
+    max-width: 600px;
+  }
 }
 
 @media only screen and (max-width: 600px) {

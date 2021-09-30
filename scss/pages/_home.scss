@@ -13,6 +13,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--text-blue);
+    @media only screen and (max-width: 1140px) {
+      font-size: var(--size-m);
+      line-height: 25px;
+    }
     @media only screen and (max-width: 600px) {
       font-size: var(--size-s);
       line-height: 18px;
@@ -28,6 +32,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--text-gray);
+    @media only screen and (max-width: 1140px) {
+      font-size: calc(var(--size-xl) + 4px);
+      line-height: 54px;
+    }
     @media only screen and (max-width: 600px) {
       font-size: var(--size-l);
       line-height: 36px;
@@ -40,6 +48,9 @@
 
   &__banner {
     margin-top: var(--span-l);
+    @media only screen and (max-width: 1140px) {
+      margin-top: var(--span-s);
+    }
     @media only screen and (max-width: 600px) {
       margin-top: var(--span-s);
     }
@@ -73,6 +84,11 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--text-gray);
+    @media only screen and (max-width: 1140px) {
+      margin-top: var(--span-s);
+      font-size: calc(var(--size-xl) + 4px);
+      line-height: 54px;
+    }
     @media only screen and (max-width: 600px) {
       margin-top: var(--span-s);
       font-size: var(--size-l);
@@ -95,6 +111,11 @@
     text-align: left;
     color: var(--text-gray-2);
     max-width: 370px;
+    @media only screen and (max-width: 1140px) {
+      margin-top: var(--span-s);
+      font-size: var(--size-m);
+      line-height: 25px;
+    }
     @media only screen and (max-width: 600px) {
       margin-top: var(--span-xs);
       font-size: var(--size-s);
@@ -118,6 +139,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--text-gray);
+    @media only screen and (max-width: 1140px) {
+      font-size: calc(var(--size-xl) + 4px);
+      line-height: 54px;
+    }
     @media only screen and (max-width: 600px) {
       font-size: var(--size-l);
       line-height: 36px;
@@ -500,6 +525,11 @@
     text-align: left;
     color: var(--text-gray);
     max-width: 940px;
+    @media only screen and (max-width: 1140px) {
+      font-size: calc(var(--size-xl));
+      line-height: 48px;
+      max-width: 600px;
+    }
     @media only screen and (max-width: 600px) {
       font-size: var(--size-l);
       line-height: 36px;

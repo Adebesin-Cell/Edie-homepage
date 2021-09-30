@@ -11,18 +11,13 @@
   }
 
   &__navigation {
-    @media only screen and (max-width: 768px) {
-      flex: 0 0 50%;
-    }
     @media only screen and (max-width: 600px) {
       flex: 0 0 100%;
     }
 
     &:nth-child(2) {
-      @media only screen and (max-width: 768px) {
-        order: -1;
-      }
       @media only screen and (max-width: 600px) {
+        order: -1;
         margin-bottom: var(--span-2xl);
       }
     }
@@ -38,9 +33,6 @@
   }
 
   &__form {
-    @media only screen and (max-width: 768px) {
-      flex: 0 0 75%;
-    }
     @media only screen and (max-width: 600px) {
       margin-top: var(--span-2xl);
       flex: 0 0 100%;
