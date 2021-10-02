@@ -20,6 +20,8 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--logo);
+    opacity: 0;
+    transform: translateY(-100px);
     @media only screen and (max-width: 600px) {
       font-size: var(--size-l);
       line-height: 36px;
@@ -70,6 +72,31 @@
     text-decoration: none;
     @include link_Underline(--header-link);
     @include link(2px);
+
+    &--0 {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+
+    &--1 {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+
+    &--2 {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+
+    &--3 {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+
+    &--4 {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
   }
 
   &__icon {
