@@ -680,8 +680,14 @@ body {
 }
 
 .intro__banner {
-  position: relative;
   margin-top: var(--span-l);
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 1440px) {
+  .intro__banner {
+    height: 450px !important;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -690,49 +696,61 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .intro__banner {
-    margin-top: var(--span-s);
+    height: 350px !important;
   }
 }
 
-.intro__picture::after {
-  content: "";
-  background: var(--text-gray-3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 18px;
-  z-index: 3;
+@media only screen and (max-width: 768px) {
+  .intro__banner {
+    height: 250px !important;
+  }
 }
 
-.intro__image {
+@media only screen and (max-width: 600px) {
+  .intro__banner {
+    margin-top: var(--span-s);
+    height: 150px !important;
+  }
+}
+
+.intro__banner img,
+.intro__banner canvas {
   display: block;
-  width: 100%;
+  width: 100% !important;
+  height: 100% !important;
   border-radius: 18px;
   position: relative;
+  object-fit: cover;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 1440px) {
-  .intro__image {
-    height: 450px;
-    object-fit: cover;
+  .intro__banner img,
+  .intro__banner canvas {
+    height: 450px !important;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .intro__image {
-    height: 350px;
-    object-fit: cover;
+  .intro__banner img,
+  .intro__banner canvas {
+    height: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro__banner img,
+  .intro__banner canvas {
+    height: 250px !important;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .intro__image {
-    height: 150px;
-    object-fit: cover;
+  .intro__banner img,
+  .intro__banner canvas {
+    height: 150px !important;
   }
 }
 

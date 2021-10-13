@@ -25,14 +25,26 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+      integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
     ></script>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
     ></script>
+
+    <script defer src="assets/Js/hover-effect.umd.js"></script>
     <script defer src="Js/App.js"></script>
 
     <title>Edie | We create beautiful and fast web services</title>
@@ -112,27 +124,7 @@
               <span> and fast web services </span>
             </h1>
           </div>
-          <div class="intro__banner">
-            <picture class="intro__picture">
-              <source
-                media="(max-width: 600px)"
-                srcset="assets/images/hero-banner--mobile.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="assets/images/hero-banner--ipad.jpg"
-              />
-              <source
-                media="(min-width: 1440px)"
-                srcset="assets/images/hero-banner--desktop.jpg"
-              />
-              <img
-                src="assets/images/hero-banner.jpg"
-                alt="hero"
-                class="intro__image"
-              />
-            </picture>
-          </div>
+          <div class="intro__banner"></div>
           <div class="intro__overview">
             <h1 class="intro__heading">
               <span> Story, emotion </span>
