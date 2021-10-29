@@ -455,8 +455,6 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--logo);
-  opacity: 0;
-  transform: translateY(-100px);
 }
 
 @media only screen and (max-width: 600px) {
@@ -536,31 +534,6 @@ body {
   transform: scaleX(1);
   transform-origin: 0 100%;
   transition-timing-function: ease;
-}
-
-.header__link--0 {
-  transform: translateY(-10px);
-  opacity: 0;
-}
-
-.header__link--1 {
-  transform: translateY(-20px);
-  opacity: 0;
-}
-
-.header__link--2 {
-  transform: translateY(-30px);
-  opacity: 0;
-}
-
-.header__link--3 {
-  transform: translateY(-40px);
-  opacity: 0;
-}
-
-.header__link--4 {
-  transform: translateY(-50px);
-  opacity: 0;
 }
 
 .header__icon {
@@ -657,8 +630,6 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--text-gray);
-  transform: translateX(-100px);
-  opacity: 0;
 }
 
 @media only screen and (max-width: 1140px) {
